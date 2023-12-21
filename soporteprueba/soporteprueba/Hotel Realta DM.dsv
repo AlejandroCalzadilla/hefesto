@@ -1,0 +1,162 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="25c916ba-d7c7-4a46-bb96-5fa2924b8755" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hotel Realta DM 2</ID>
+  <Name>Hotel Realta DM</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Hotel Realta DM</DataSourceID>
+  <Schema>
+    <xs:schema id="Hotel_x0020_Realta_x0020_DM" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Hotel_x0020_Realta_x0020_DM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="1b26749a-89c9-4d75-863e-731304527c23">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="ocupacion_Fac_NivelOcupacion" msprop:DbTableName="Fac_NivelOcupacion" msprop:FriendlyName="Fac_NivelOcupacion" msprop:TableType="Table" msprop:DbSchemaName="ocupacion" msprop:design-time-name="f261ba94-8adb-4abf-9dc9-396f7397e554">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="2eda25f9-2383-4db5-b49f-035a2a09cfa2" type="xs:int" />
+                  <xs:element name="id_hotel" msprop:FriendlyName="id_hotel" msprop:DbColumnName="id_hotel" msprop:design-time-name="bc41b58b-3600-41a1-ac79-f5705b9492c8" type="xs:int" />
+                  <xs:element name="id_huesped" msprop:FriendlyName="id_huesped" msprop:DbColumnName="id_huesped" msprop:design-time-name="b4fd2997-2e0f-44d6-9050-ee382f758e0e" type="xs:int" />
+                  <xs:element name="id_fecha" msprop:FriendlyName="id_fecha" msprop:DbColumnName="id_fecha" msprop:design-time-name="f1aad9f9-e1cf-4a3c-83fd-54f4ca299857" type="xs:int" />
+                  <xs:element name="cantidadPromHuesp" msprop:FriendlyName="cantidadPromHuesp" msprop:DbColumnName="cantidadPromHuesp" msprop:design-time-name="6e258163-a964-40d7-b236-f6ba76a61e9e" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="cantidadDiasEstanciaProm" msprop:FriendlyName="cantidadDiasEstanciaProm" msprop:DbColumnName="cantidadDiasEstanciaProm" msprop:design-time-name="04d5adf8-385f-48c1-b3fc-bb59546a1e86" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="porcentajeHabOcu" msprop:FriendlyName="porcentajeHabOcu" msprop:DbColumnName="porcentajeHabOcu" msprop:design-time-name="663063f0-d5d0-4088-9099-f7924f0d6068" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="ocupacion_tiempoo" msprop:DbTableName="tiempoo" msprop:FriendlyName="tiempoo" msprop:TableType="Table" msprop:DbSchemaName="ocupacion" msprop:design-time-name="c609afb6-6511-4517-bd34-93cf8b218a3b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_fecha" msprop:FriendlyName="id_fecha" msprop:DbColumnName="id_fecha" msprop:design-time-name="44cf4e13-baff-455b-841a-b5ca65e96b17" type="xs:int" />
+                  <xs:element name="mes" msprop:FriendlyName="mes" msprop:DbColumnName="mes" msprop:design-time-name="cf748eb8-a71e-4408-9c2c-d2c3be1eeba2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="año" msprop:FriendlyName="año" msprop:DbColumnName="año" msprop:design-time-name="fcc5ab0c-39d6-4b3f-9172-fcc88cb1b464" type="xs:int" minOccurs="0" />
+                  <xs:element name="trimestre" msprop:FriendlyName="trimestre" msprop:DbColumnName="trimestre" msprop:design-time-name="98163c9e-dc9e-410b-961c-aa7b77cb0e84" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="ocupacion_tipoh" msprop:DbTableName="tipoh" msprop:FriendlyName="tipoh" msprop:TableType="Table" msprop:DbSchemaName="ocupacion" msprop:design-time-name="3806943a-3045-4372-a355-65b637b9c1f7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="roomtp_id" msprop:FriendlyName="roomtp_id" msprop:DbColumnName="roomtp_id" msprop:design-time-name="0f6ed6a8-8006-4c38-b835-94fccf695b5f" type="xs:int" />
+                  <xs:element name="nombre" msprop:FriendlyName="nombre" msprop:DbColumnName="nombre" msprop:design-time-name="00e9daad-8986-40f5-a7a1-4ad96c711f9d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="125" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="capaciad" msprop:FriendlyName="capaciad" msprop:DbColumnName="capaciad" msprop:design-time-name="975fb909-cb9d-49c0-9edb-ef88a115d9fc" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="ocupacion_DimHotel" msprop:DbTableName="DimHotel" msprop:FriendlyName="DimHotel" msprop:TableType="Table" msprop:DbSchemaName="ocupacion" msprop:design-time-name="32022b48-1f10-4fcf-a483-54d389106af8">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_dimHotel" msprop:FriendlyName="id_dimHotel" msprop:DbColumnName="id_dimHotel" msprop:design-time-name="04e29164-a433-4856-add9-e7ca15f96147" type="xs:int" />
+                  <xs:element name="nombreHotel" msprop:FriendlyName="nombreHotel" msprop:DbColumnName="nombreHotel" msprop:design-time-name="328ae11a-9611-4b32-bc62-3b0d703c1834" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="85" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nombreArea" msprop:FriendlyName="nombreArea" msprop:DbColumnName="nombreArea" msprop:design-time-name="fcf16f8e-1d9b-4c3d-8b3c-51c6c11cc235" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="125" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nombreTipoHab" msprop:FriendlyName="nombreTipoHab" msprop:DbColumnName="nombreTipoHab" msprop:design-time-name="571af480-0845-4403-8d49-ac8a4ca2565f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="125" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="numeroHab" msprop:FriendlyName="numeroHab" msprop:DbColumnName="numeroHab" msprop:design-time-name="286c46c1-27ad-49cc-bca4-c2fb926af7e9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="125" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//ocupacion_Fac_NivelOcupacion" />
+          <xs:field xpath="id" />
+          <xs:field xpath="id_hotel" />
+          <xs:field xpath="id_huesped" />
+          <xs:field xpath="id_fecha" />
+        </xs:unique>
+        <xs:unique name="ocupacion_tiempoo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//ocupacion_tiempoo" />
+          <xs:field xpath="id_fecha" />
+        </xs:unique>
+        <xs:unique name="ocupacion_tipoh_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//ocupacion_tipoh" />
+          <xs:field xpath="roomtp_id" />
+        </xs:unique>
+        <xs:unique name="ocupacion_DimHotel_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//ocupacion_DimHotel" />
+          <xs:field xpath="id_dimHotel" />
+        </xs:unique>
+        <xs:keyref name="fk_id_hotel" refer="ocupacion_DimHotel_Constraint1">
+          <xs:selector xpath=".//ocupacion_Fac_NivelOcupacion" />
+          <xs:field xpath="id_hotel" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Hotel_x0020_Realta_x0020_DM xmlns="" />
+  </Schema>
+</DataSourceView>

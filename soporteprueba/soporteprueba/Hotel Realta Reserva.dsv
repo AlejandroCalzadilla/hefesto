@@ -1,0 +1,164 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="40cad6d6-ecc8-4a5d-bf51-1f6dc880b15b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hotel Realta Reserva</ID>
+  <Name>Hotel Realta Reserva</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Hotel Realta DM</DataSourceID>
+  <Schema>
+    <xs:schema id="Hotel_x0020_Realta_x0020_Reserva" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Hotel_x0020_Realta_x0020_Reserva" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="57d447e0-227f-4d3f-beac-f2906bd2e50c">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="Servicio_Hotel" msprop:DbTableName="Hotel" msprop:FriendlyName="Hotel" msprop:TableType="Table" msprop:DbSchemaName="Servicio" msprop:design-time-name="e929de13-f0d3-4091-868d-6d2393e15bc0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="hotel_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="hotel_id" msprop:DbColumnName="hotel_id" msprop:design-time-name="8d5500e8-85f8-4d7a-95d1-290e4e452774" type="xs:int" />
+                  <xs:element name="hotel_name" msprop:FriendlyName="hotel_name" msprop:DbColumnName="hotel_name" msprop:design-time-name="15c5b576-b62b-4418-8144-a5b1bb3be898">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="85" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="hotel_rating_star" msprop:FriendlyName="hotel_rating_star" msprop:DbColumnName="hotel_rating_star" msprop:design-time-name="e70528c3-000d-4002-8eea-9b812a455cb1" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Reserva_DimTiempoR" msprop:DbTableName="DimTiempoR" msprop:FriendlyName="DimTiempoR" msprop:TableType="Table" msprop:DbSchemaName="Reserva" msprop:design-time-name="06e2ba3c-946e-4547-be88-20810737447f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_fecha" msprop:FriendlyName="id_fecha" msprop:DbColumnName="id_fecha" msprop:design-time-name="c1606e5d-bb16-47dc-9247-b8345b1b27fd" type="xs:int" />
+                  <xs:element name="año" msprop:FriendlyName="año" msprop:DbColumnName="año" msprop:design-time-name="ce8386be-47f5-4e48-8398-f3d25506741f" type="xs:int" minOccurs="0" />
+                  <xs:element name="trimestre" msprop:FriendlyName="trimestre" msprop:DbColumnName="trimestre" msprop:design-time-name="60cdd9ed-5608-4aff-803c-b643b7da717f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="mes" msprop:FriendlyName="mes" msprop:DbColumnName="mes" msprop:design-time-name="3aad3153-fd7a-4a2d-8c51-7787098d1d4e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Reserva_DimUsersR" msprop:DbTableName="DimUsersR" msprop:FriendlyName="DimUsersR" msprop:TableType="Table" msprop:DbSchemaName="Reserva" msprop:design-time-name="6d1dbd25-1db5-469e-a788-367996162801">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_user" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_user" msprop:DbColumnName="id_user" msprop:design-time-name="02e53869-3e4e-4f21-a1b7-02200e1a06f7" type="xs:int" />
+                  <xs:element name="nombre" msprop:FriendlyName="nombre" msprop:DbColumnName="nombre" msprop:design-time-name="23c3a184-60d1-45e4-a324-6d55d50b33fe" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="85" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="compañia" msprop:FriendlyName="compañia" msprop:DbColumnName="compañia" msprop:design-time-name="13c8c373-02d8-427e-b9ff-068a25a3a198" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="membresia" msprop:FriendlyName="membresia" msprop:DbColumnName="membresia" msprop:design-time-name="3c64b493-b8f2-4c5f-a8c2-f2cfb21d92ef" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="Reserva_FactReservasR" msprop:DbTableName="FactReservasR" msprop:FriendlyName="FactReservasR" msprop:TableType="Table" msprop:DbSchemaName="Reserva" msprop:design-time-name="7f954c8b-507b-495c-89eb-0e95e596d958">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="f61cd68e-a040-4813-ab39-6d91e49e372d" type="xs:int" />
+                  <xs:element name="id_user" msprop:FriendlyName="id_user" msprop:DbColumnName="id_user" msprop:design-time-name="5bd960cf-9dc9-4305-8b6e-e03a61becc65" type="xs:int" />
+                  <xs:element name="id_hotel" msprop:FriendlyName="id_hotel" msprop:DbColumnName="id_hotel" msprop:design-time-name="d5ffb018-9382-4302-b6c3-4fe0b150c7ad" type="xs:int" />
+                  <xs:element name="id_fecha" msprop:FriendlyName="id_fecha" msprop:DbColumnName="id_fecha" msprop:design-time-name="71fe35c8-c3bd-49ed-957d-3c3872a0991e" type="xs:int" />
+                  <xs:element name="promedioHuesped" msprop:FriendlyName="promedioHuesped" msprop:DbColumnName="promedioHuesped" msprop:design-time-name="a89f00ba-9fc1-4026-8cd6-ad4599f56a59" type="xs:int" minOccurs="0" />
+                  <xs:element name="porcentajePagoAnticipado" msprop:FriendlyName="porcentajePagoAnticipado" msprop:DbColumnName="porcentajePagoAnticipado" msprop:design-time-name="755e7e0d-5eab-45e4-bbdd-de43f217db16" type="xs:int" minOccurs="0" />
+                  <xs:element name="montoTotalDesc" msprop:FriendlyName="montoTotalDesc" msprop:DbColumnName="montoTotalDesc" msprop:design-time-name="3619d114-f298-4af1-b1d6-7d9dd1e69e73" type="xs:int" minOccurs="0" />
+                  <xs:element name="estado_reserva" msprop:FriendlyName="estado_reserva" msprop:DbColumnName="estado_reserva" msprop:design-time-name="5fdeba75-557c-47e7-89a1-9b4a9a762c62" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Servicio_Hotel" />
+          <xs:field xpath="hotel_id" />
+        </xs:unique>
+        <xs:unique name="Reserva_DimTiempoR_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Reserva_DimTiempoR" />
+          <xs:field xpath="id_fecha" />
+        </xs:unique>
+        <xs:unique name="Reserva_DimUsersR_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Reserva_DimUsersR" />
+          <xs:field xpath="id_user" />
+        </xs:unique>
+        <xs:unique name="Reserva_FactReservasR_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//Reserva_FactReservasR" />
+          <xs:field xpath="id" />
+          <xs:field xpath="id_user" />
+          <xs:field xpath="id_hotel" />
+          <xs:field xpath="id_fecha" />
+        </xs:unique>
+        <xs:keyref name="fk_hotelR_id" refer="Constraint1">
+          <xs:selector xpath=".//Reserva_FactReservasR" />
+          <xs:field xpath="id_hotel" />
+        </xs:keyref>
+        <xs:keyref name="fk_fechaR_id" refer="Reserva_DimTiempoR_Constraint1">
+          <xs:selector xpath=".//Reserva_FactReservasR" />
+          <xs:field xpath="id_fecha" />
+        </xs:keyref>
+        <xs:keyref name="fk_userR_id" refer="Reserva_DimUsersR_Constraint1">
+          <xs:selector xpath=".//Reserva_FactReservasR" />
+          <xs:field xpath="id_user" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Hotel_x0020_Realta_x0020_Reserva xmlns="" />
+  </Schema>
+</DataSourceView>

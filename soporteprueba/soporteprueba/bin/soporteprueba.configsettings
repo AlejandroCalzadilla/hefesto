@@ -44,6 +44,24 @@
       <Dimension>
         <ID>Thu</ID>
       </Dimension>
+      <Dimension>
+        <ID>Dim Users R 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Tiempo R 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Hotel 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Hotel</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Huesped</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dimtiempo</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
@@ -80,6 +98,32 @@
             <Partitions>
               <Partition>
                 <ID>Th</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Hotel Realta Reserva</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Reservas R</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Reservas R</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Hotel Realta Ocupacion</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fac Nivel Ocupacion</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fac Nivel Ocupacion</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

@@ -37,6 +37,26 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Hotel Realta Reserva.cube</Name>
+      <FullPath>Hotel Realta Reserva.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Hotel Realta Reserva.partitions</Name>
+          <FullPath>Hotel Realta Reserva.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hotel Realta Ocupacion.cube</Name>
+      <FullPath>Hotel Realta Ocupacion.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Hotel Realta Ocupacion.partitions</Name>
+          <FullPath>Hotel Realta Ocupacion.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -71,6 +91,30 @@
       <Name>Thu.dim</Name>
       <FullPath>Thu.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Users R 1.dim</Name>
+      <FullPath>Dim Users R 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Tiempo R 1.dim</Name>
+      <FullPath>Dim Tiempo R 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hotel 1.dim</Name>
+      <FullPath>Hotel 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Hotel.dim</Name>
+      <FullPath>Dim Hotel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Huesped.dim</Name>
+      <FullPath>Dim Huesped.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dimtiempo.dim</Name>
+      <FullPath>Dimtiempo.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -94,6 +138,18 @@
     <ProjectItem>
       <Name>Hotel Realta E.dsv</Name>
       <FullPath>Hotel Realta E.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hotel Realta DM.dsv</Name>
+      <FullPath>Hotel Realta DM.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hotel Realta Reserva.dsv</Name>
+      <FullPath>Hotel Realta Reserva.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hotel Realta Ocupacion.dsv</Name>
+      <FullPath>Hotel Realta Ocupacion.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
